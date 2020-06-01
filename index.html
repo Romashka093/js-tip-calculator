@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+
+    <main>
+        <form>
+            <label>Bill</label>
+            <input type="number" />
+
+            <label>Tip</label>
+            <input type="button" value="-" name="minus">
+            <input type="number" placeholder="%" />
+            <input type="button" value="+" name="plus">
+
+            <label>Number of people</label>
+            <input type="button" value="-" name="minus">
+            <input type="number" />
+            <input type="button" value="+" name="plus">
+
+            <button type="submit">show esult</button>
+        </form>
+        <div>
+            <div>
+                <div>
+                    <span>Tip</span>
+                    <span>per persone</span>
+                </div>
+                <div>
+                    <span>$</span>
+                    <span>00.00</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>Total</span>
+                    <span>per persone</span>
+                </div>
+                <div>
+                    <span>$</span>
+                    <span>00.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/tipCalculator.js" type="module"></script>
+</body>
+
+</html>
