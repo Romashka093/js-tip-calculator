@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.main {
+    max-width: 310px;
+    margin: 50px auto 0;
+}
+
+.tip-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.name-input {
+    text-align: center;
+}
+
+.number-field {
+    margin: 0;
+}
+
+.btns-wrap {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-wrap {
+    display: inline-table;
+}
+
+.btn {
+    padding: 5px;
+}
+
+.btn-input {
+    width: 50%;
+}
+
+.btn-result {
+    margin: 0;
+}
+
+
+/* results */
+
+.result-wrap {
+    text-align: center;
+}
+
+.result-type-wrap {
+    margin: 0;
+}
+
+.result-type-title {
+    margin: 0;
+}
+
+.result-title {
+    margin: 0;
+}
+
+.result-description {
+    margin: 0;
+}
+
+.result-currency {
+    margin: 0;
+}
+
+.total {
+    margin: 0;
+}
+
+
+/* убрать стрелки с инпутов
+.raz { 
+    -moz-appearance: textfield;
+  }
+  .raz::-webkit-inner-spin-button { 
+    display: none; */
