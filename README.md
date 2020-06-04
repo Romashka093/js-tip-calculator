@@ -1,1 +1,1 @@
-🔗# [tip calculator](https://romashka093.github.io/js-tip-calculator/)
+## 🔗[tip calculator](https://romashka093.github.io/js-tip-calculator/)
