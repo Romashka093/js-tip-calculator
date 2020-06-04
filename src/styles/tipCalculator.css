@@ -42,7 +42,11 @@ ol {
 }
 
 .number-field {
-    margin: 0;
+    -moz-appearance: textfield;
+}
+
+.number-field::-webkit-inner-spin-button {
+    display: none;
 }
 
 .btns-wrap {
@@ -97,11 +101,3 @@ ol {
 .total {
     margin: 0;
 }
-
-
-/* убрать стрелки с инпутов
-.raz { 
-    -moz-appearance: textfield;
-  }
-  .raz::-webkit-inner-spin-button { 
-    display: none; */

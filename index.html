@@ -18,14 +18,14 @@
     <main class="main">
         <form class="tip-form">
             <label class="name-input">Bill of party</label>
-            <input class="number-field bill-input" type="number" placeholder="Enter amount of your bill" />
+            <input class="number-field bill-input" type="number" placeholder="Enter amount of your bill" pattern="-?(\d+|\d+.\d+|.\d+)([eE][-+]?\d+)?" autofocus />
 
 
             <div class="btns-wrap">
                 <div class="btn-wrap">
                     <label class="name-input">Tip</label>
                     <input class="btn" data-action="tip-minus" type="button" value="-" name="minus">
-                    <input class="number-field btn-input tip-input" type="number" placeholder="%" />
+                    <input class="number-field btn-input tip-input" type="number" placeholder="%" max="100" disabled />
                     <input class="btn" data-action="tip-plus" type="button" value="+" name="plus">
                 </div>
 
@@ -33,37 +33,15 @@
                 <div class="btn-wrap">
                     <label class="name-input">Split</label>
                     <input class="btn" data-action="people-minus" type="button" value="-" name="minus">
-                    <input class="number-field btn-input people-input" type="number" value="1" />
+                    <input class="number-field btn-input people-input" type="number" value="1" min="1" />
                     <input class="btn" data-action="people-plus" type="button" value="+" name="plus">
                 </div>
             </div>
 
             <button class="btn-result" data-action="submit" type="button">show result of a party</button>
+            <div id="result"></div>
+            <button class="btn-reset" data-action="reset" type="button">reset</button>
         </form>
-        <div id="result">
-            <!-- <div class="result-wrap">
-                <div class="result-type-wrap">
-                    <div class="result-type-title">
-                        <span class="result-title">Tip</span>
-                        <span class="result-description">per persone</span>
-                    </div>
-                    <div>
-                        <span class="result-currency">$</span>
-                        <span class="total-tip">00.00</span>
-                    </div>
-                </div>
-                <div class="result-type-wrap">
-                    <div class="result-type-title">
-                        <span class="result-title">Total</span>
-                        <span class="result-description">per persone</span>
-                    </div>
-                    <div>
-                        <span class="result-currency">$</span>
-                        <span class="total">00.00</span>
-                    </div>
-                </div>
-            </div> -->
-        </div>
     </main>
     <script src="./src/js/tipCalculator.js" type="module"></script>
 </body>
