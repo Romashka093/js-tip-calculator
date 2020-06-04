@@ -1,5 +1,4 @@
 'use strict';
-console.warn('Tip Calculator');
 
 const ref = {
 	bill: document.querySelector('.bill-input'),
@@ -17,8 +16,6 @@ const ref = {
 
 	resultContainer: document.getElementById('result')
 };
-
-console.log('ref', ref);
 
 function handleAddTip() {
 	const tip = Number(ref.tip.value);
@@ -72,7 +69,7 @@ function handleShowResult(evt) {
 			<span class="result-description">per persone</span>
 		</div>
 		<div class="total-result">
-			<span class="total-tip">${totalTip}</span>
+			<span class="total">${totalTip}</span>
 		</div>
 	</div>
 	<div class="result-type-wrap">

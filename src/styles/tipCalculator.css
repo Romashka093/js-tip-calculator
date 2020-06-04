@@ -2,6 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #1e0411;
+    background-color: #faeee7;
 }
 
 a {
@@ -26,8 +30,9 @@ ol {
 }
 
 .main {
-    max-width: 310px;
+    max-width: 320px;
     margin: 50px auto 0;
+    padding: 0 5px;
 }
 
 .tip-form {
@@ -39,10 +44,16 @@ ol {
 
 .name-input {
     text-align: center;
+    text-transform: capitalize;
 }
 
 .number-field {
     -moz-appearance: textfield;
+    padding: 6px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: #562349;
+    outline: #562349;
 }
 
 .number-field::-webkit-inner-spin-button {
@@ -60,15 +71,29 @@ ol {
 }
 
 .btn {
-    padding: 5px;
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6bbcf;
+    text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #ad6989;
+    transform: scale(1.1);
 }
 
 .btn-input {
     width: 50%;
+    text-align: center;
 }
 
 .btn-result {
     margin: 0;
+    margin-bottom: 15px;
 }
 
 
@@ -79,23 +104,25 @@ ol {
 }
 
 .result-type-wrap {
-    margin: 0;
+    margin-bottom: 15px;
+}
+
+.result-type-wrap:hover,
+.result-type-wrap:focus {
+    transform: scale(1.1);
+    font-weight: bolder;
 }
 
 .result-type-title {
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 .result-title {
-    margin: 0;
+    text-transform: uppercase;
 }
 
 .result-description {
-    margin: 0;
-}
-
-.result-currency {
-    margin: 0;
+    text-transform: lowercase;
 }
 
 .total {
